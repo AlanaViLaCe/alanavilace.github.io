@@ -1,0 +1,220 @@
+
+:root{
+    --vermelha: #E50914;
+    --preta: #141414 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: var(--preta); 
+  font-family: 'Arial', Times, serif;
+   color: white; 
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--preta);
+  padding: 20px 60px 20px 0;
+  margin-left: 0;
+}
+
+/* header .logo{
+   color: var(--vermelha); 
+   font-family: 'Arial Black', times;
+   font-size: 40px;
+} */
+
+.logo{
+    height: 30px;
+    margin-left: 60px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+.filme-principal{
+    font-size: 16px;
+    text-align: justify;
+    /*background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../../img/capa.jpg);*/
+    
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: first baseline;
+    align-items: flex-start;
+    overflow-y: auto;
+    display: block;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(../../img/capa.png);
+  
+    /* Set a specific height */
+    min-height: 300px;
+  
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 70px; */
+  }
+
+  .n{
+    margin-top: 10%;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.filme-principal .descricao{
+    margin: 0 0 30px 0;
+    max-width: 70%;
+}
+.filme-principal .titulo{
+    /* margin-top: 25%; */
+    font-size: 60px;
+    font-family:  'Cedarville Cursive', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    text-decoration: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 60px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    width: 260px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box-filme1{
+    width: 210px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-filmes{
+    margin-top: 5px;
+}
+.carousel-filmes img{
+    margin: 0 10px;
+    outline: none;
+    border: none;
+}
+
+footer{
+    padding: 27px 0 27px 0;
+    text-align: center;
+    opacity: 70%;
+}
+
+
+
+
+/* Página Nossa Lista */
+
+main{
+    padding-top: 70px;
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    /* margin: 15px 0 px px ; */
+    font-size: 28px;
+    display: block;
+    padding: 50px 0 10px 60px;
+}
+
+.lista-filmes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    width: 280px;
+    margin: 30px 3px 30px 3px;
+}
+
+.item1{
+    width: 270px;
+    margin: 30px 3px 30px 3px;
+}
+
+.item2{
+    width: 210px;
+    margin: 30px 3px 30px 3px;
+}
+
+.item3{
+    width: 320px;
+    margin: 30px 3px 30px 3px;
+}
+
+.texto{
+    padding: 30px 60px 10px 60px;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    text-align: justify;
+    opacity: 70%;
+    line-height: 40px;
+}
+
+.audio{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px 10px 60px;
+    align-items: center;
+}
+
+.audio h2{
+    font-size: 25px;
+}
